@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orientación o reporte | ¿Esto es hostigamiento? | Promart</title>
+    <meta name="description"
+        content="Solicita orientación inicial o inicia una ruta de reporte con un formulario claro, serio y confidencial." />
+    <meta name="theme-color" content="#ff6900" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+
+<body class="page-inner page-reporte">
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header class="site-header" id="top">
+        <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand site-brand" href="index.html" aria-label="Ir al inicio">
+                    <img src="assets/img/logo-promart.png" alt="Promart Homecenter" class="site-brand__logo" />
+                </a>
+
+                <button class="navbar-toggler site-nav__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto me-lg-3 site-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#rutas">Rutas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#senales">Señales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="escenarios.html">Casos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guia.html">Guía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recursos.html">Recursos</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-primary btn-sm site-nav__cta" href="reporte.html">
+                        Necesito orientación
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="page-shell">
+            <div class="container">
+                <section class="page-intro" aria-labelledby="pageTitle">
+                    <span class="eyebrow">Orientación o reporte</span>
+                    <h1 class="page-intro__title" id="pageTitle">
+                        Elige la ruta que necesitas hoy
+                    </h1>
+                    <p class="page-intro__text">
+                        Puedes pedir orientación si todavía no sabes qué hacer, o iniciar una
+                        ruta de reporte si ya decidiste avanzar. Este formulario busca ser claro,
+                        respetuoso y lo más breve posible.
+                    </p>
+
+                    <div class="page-actions">
+                        <a class="btn btn-primary" href="#modulo-reporte">Completar formulario</a>
+                        <a class="btn btn-outline-primary" href="guia.html">Volver a la guía</a>
+                    </div>
+                </section>
+
+                <section class="report-layout" id="modulo-reporte" aria-labelledby="reportTitle">
+                    <div class="report-main">
+                        <section class="confidentiality-panel" aria-labelledby="confidentialityTitle">
+                            <h2 class="confidentiality-panel__title" id="confidentialityTitle">
+                                Antes de continuar
+                            </h2>
+                            <p class="mb-0">
+                                Este formulario no reemplaza necesariamente el canal oficial de denuncia.
+                                Puede servir para orientación inicial o para ayudarte a iniciar una ruta
+                                más formal. Comparte solo lo que te haga sentir segura(o) en este momento.
+                            </p>
+                        </section>
+
+                        <section class="form-card mt-4" aria-labelledby="requestTypeTitle">
+                            <h2 class="form-card__title" id="requestTypeTitle">¿Qué necesitas?</h2>
+                            <p class="form-card__subtitle">
+                                Selecciona la opción que mejor describa tu necesidad actual.
+                            </p>
+
+                            <div class="request-type-grid" role="radiogroup" aria-label="Tipo de solicitud">
+                                <label class="request-type-card is-active" data-request-type="orientacion">
+                                    <input type="radio" name="requestType" value="orientacion" class="visually-hidden"
+                                        checked />
+                                    <h3 class="request-type-card__title">Necesito orientación</h3>
+                                    <p class="request-type-card__text mb-0">
+                                        Quiero entender mis opciones, ordenar lo ocurrido o recibir ayuda
+                                        inicial antes de decidir si reporto.
+                                    </p>
+                                </label>
+
+                                <label class="request-type-card" data-request-type="reporte">
+                                    <input type="radio" name="requestType" value="reporte" class="visually-hidden" />
+                                    <h3 class="request-type-card__title">Quiero iniciar un reporte</h3>
+                                    <p class="request-type-card__text mb-0">
+                                        Ya identifiqué que necesito una ruta más formal y quiero avanzar
+                                        con ese proceso.
+                                    </p>
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-card mt-4">
+                            <form id="reportForm" novalidate>
+                                <div class="form-section">
+                                    <h2 class="form-section__title" id="reportTitle">Información básica</h2>
+
+                                    <div class="report-form__grid">
+                                        <div>
+                                            <label for="region">Región</label>
+                                            <select id="region" name="region" class="form-select" required>
+                                                <option value="">Selecciona una región</option>
+                                                <option value="lima-callao">Lima y Callao</option>
+                                                <option value="norte">Norte</option>
+                                                <option value="centro-sur">Centro y Sur</option>
+                                                <option value="oriente">Oriente</option>
+                                            </select>
+                                            <p class="form-error is-hidden" data-error-for="region"></p>
+                                        </div>
+
+                                        <div>
+                                            <label for="area">Área o entorno</label>
+                                            <select id="area" name="area" class="form-select" required>
+                                                <option value="">Selecciona un área</option>
+                                                <option value="piso-ventas">Piso de ventas</option>
+                                                <option value="caja">Caja</option>
+                                                <option value="almacen">Almacén</option>
+                                                <option value="supervision">Supervisión</option>
+                                                <option value="back-office">Back office de tienda</option>
+                                                <option value="otro">Otro</option>
+                                            </select>
+                                            <p class="form-error is-hidden" data-error-for="area"></p>
+                                        </div>
+
+                                        <div>
+                                            <label for="relationship">¿Qué relación tienes con el caso?</label>
+                                            <select id="relationship" name="relationship" class="form-select" required>
+                                                <option value="">Selecciona una opción</option>
+                                                <option value="me-paso">Me pasó a mí</option>
+                                                <option value="testigo">Fui testigo</option>
+                                                <option value="me-contaron">Me lo contó otra persona</option>
+                                            </select>
+                                            <p class="form-error is-hidden" data-error-for="relationship"></p>
+                                        </div>
+
+                                        <div>
+                                            <label for="urgency">Nivel de urgencia</label>
+                                            <select id="urgency" name="urgency" class="form-select" required>
+                                                <option value="">Selecciona una opción</option>
+                                                <option value="alta">Alta: sigue ocurriendo o hay riesgo</option>
+                                                <option value="media">Media: necesito orientación pronto</option>
+                                                <option value="baja">Baja: quiero dejar constancia o entender opciones
+                                                </option>
+                                            </select>
+                                            <p class="form-error is-hidden" data-error-for="urgency"></p>
+                                        </div>
+
+                                        <div class="col-span-2">
+                                            <label for="incidentDate">Fecha o periodo aproximado</label>
+                                            <input type="text" id="incidentDate" name="incidentDate"
+                                                class="form-control"
+                                                placeholder="Ejemplo: marzo 2026, hace 2 semanas, ayer en el turno tarde"
+                                                required />
+                                            <p class="form-help">
+                                                No necesitas recordar una fecha exacta si aún no la tienes.
+                                            </p>
+                                            <p class="form-error is-hidden" data-error-for="incidentDate"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h2 class="form-section__title">Cuéntanos lo esencial</h2>
+
+                                    <div class="report-form__grid">
+                                        <div class="col-span-2">
+                                            <label for="description">Descripción breve de lo ocurrido</label>
+                                            <textarea id="description" name="description" class="form-control"
+                                                placeholder="Describe qué pasó, cómo ocurrió y por qué te preocupa. Puedes usar tus propias palabras."
+                                                required></textarea>
+                                            <p class="form-help">
+                                                Comparte lo que recuerdes con claridad. No necesitas redactarlo
+                                                perfecto.
+                                            </p>
+                                            <p class="form-error is-hidden" data-error-for="description"></p>
+                                        </div>
+
+                                        <div>
+                                            <label for="ongoing">¿La situación sigue ocurriendo?</label>
+                                            <select id="ongoing" name="ongoing" class="form-select" required>
+                                                <option value="">Selecciona una opción</option>
+                                                <option value="si">Sí</option>
+                                                <option value="no">No</option>
+                                                <option value="no-se">No estoy segura(o)</option>
+                                            </select>
+                                            <p class="form-error is-hidden" data-error-for="ongoing"></p>
+                                        </div>
+
+                                        <div>
+                                            <label for="evidence">¿Hay mensajes, testigos o evidencia?</label>
+                                            <select id="evidence" name="evidence" class="form-select" required>
+                                                <option value="">Selecciona una opción</option>
+                                                <option value="mensajes">Sí, mensajes o capturas</option>
+                                                <option value="testigos">Sí, testigos</option>
+                                                <option value="ambos">Sí, ambos</option>
+                                                <option value="no">No por ahora</option>
+                                                <option value="no-se">No estoy segura(o)</option>
+                                            </select>
+                                            <p class="form-error is-hidden" data-error-for="evidence"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h2 class="form-section__title">Datos de contacto opcionales</h2>
+
+                                    <div class="report-form__grid">
+                                        <div>
+                                            <label for="fullName">Nombre o alias</label>
+                                            <input type="text" id="fullName" name="fullName" class="form-control"
+                                                placeholder="Puedes dejar solo un nombre o un alias" />
+                                            <p class="form-help">
+                                                Opcional. Completa este campo si deseas que puedan contactarte mejor.
+                                            </p>
+                                            <p class="form-error is-hidden" data-error-for="fullName"></p>
+                                        </div>
+
+                                        <div>
+                                            <label for="contactEmail">Correo electrónico</label>
+                                            <input type="email" id="contactEmail" name="contactEmail"
+                                                class="form-control" placeholder="nombre@correo.com" />
+                                            <p class="form-error is-hidden" data-error-for="contactEmail"></p>
+                                        </div>
+
+                                        <div class="col-span-2">
+                                            <label for="contactPhone">Teléfono o medio de contacto</label>
+                                            <input type="text" id="contactPhone" name="contactPhone"
+                                                class="form-control" placeholder="Opcional" />
+                                            <p class="form-error is-hidden" data-error-for="contactPhone"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <h2 class="form-section__title">Consentimiento y tratamiento</h2>
+
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="true"
+                                            id="consentAccuracy" name="consentAccuracy" required />
+                                        <label class="form-check-label" for="consentAccuracy">
+                                            Confirmo que la información compartida corresponde a lo que conozco o viví.
+                                        </label>
+                                        <p class="form-error is-hidden" data-error-for="consentAccuracy"></p>
+                                    </div>
+
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" value="true" id="consentPrivacy"
+                                            name="consentPrivacy" required />
+                                        <label class="form-check-label" for="consentPrivacy">
+                                            Entiendo que este envío busca orientación inicial o derivación, y que el
+                                            tratamiento debe manejarse con confidencialidad.
+                                        </label>
+                                        <p class="form-error is-hidden" data-error-for="consentPrivacy"></p>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="true" id="consentContact"
+                                            name="consentContact" />
+                                        <label class="form-check-label" for="consentContact">
+                                            Acepto que puedan contactarme si dejé un medio de contacto.
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-section">
+                                    <div class="form-summary" id="requestSummary">
+                                        <strong>Resumen de la ruta elegida</strong>
+                                        <p class="mb-0" id="requestSummaryText">
+                                            Estás solicitando orientación inicial.
+                                        </p>
+                                    </div>
+
+                                    <div class="page-state-block__actions mt-4">
+                                        <button type="submit" class="btn btn-primary" id="submitReportBtn">
+                                            Enviar solicitud
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary" id="resetReportFormBtn">
+                                            Limpiar formulario
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+
+                        <section class="form-card mt-4 is-hidden" id="formSuccessCard" aria-labelledby="successTitle">
+                            <h2 class="form-card__title" id="successTitle">Solicitud registrada</h2>
+                            <p class="form-card__subtitle">
+                                Tu información fue preparada correctamente. Guarda este código de seguimiento.
+                            </p>
+
+                            <div class="tracking-card">
+                                <span class="tracking-card__code" id="trackingCode">PMH-000000</span>
+                                <p class="mb-0" id="successMessage">
+                                    Recibirás la siguiente indicación según la ruta seleccionada.
+                                </p>
+                            </div>
+
+                            <div class="page-state-block__actions mt-4">
+                                <a class="btn btn-primary" href="recursos.html">Ir a recursos</a>
+                                <button type="button" class="btn btn-outline-primary" id="newRequestBtn">
+                                    Registrar otra solicitud
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="report-sidebar" aria-label="Apoyo lateral">
+                        <div class="flow-stack">
+                            <section class="panel-card">
+                                <span class="eyebrow">Diferencia clave</span>
+                                <h2 class="panel-card__title">Orientación no es lo mismo que reporte</h2>
+                                <p class="panel-card__text">
+                                    Orientación te ayuda a ordenar lo ocurrido y entender opciones.
+                                    Reporte implica avanzar hacia una ruta más formal.
+                                </p>
+                            </section>
+
+                            <section class="panel-card">
+                                <span class="eyebrow">Confidencialidad</span>
+                                <h2 class="panel-card__title">Comparte solo lo necesario</h2>
+                                <p class="panel-card__text">
+                                    No necesitas contar todo de una sola vez. Empieza con lo esencial y
+                                    evita exponerte más de lo necesario.
+                                </p>
+                            </section>
+
+                            <section class="result-card">
+                                <span class="eyebrow">Ruta alternativa</span>
+                                <h2 class="result-card__title">¿Todavía tienes dudas?</h2>
+                                <p class="result-card__text">
+                                    Puedes volver a la guía o revisar casos antes de enviar tu solicitud.
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-outline-primary" href="guia.html">Volver a la guía</a>
+                                    <a class="btn btn-primary" href="escenarios.html">Revisar casos</a>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-brand">
+                        <img src="assets/img/logo-promart.png" alt="Promart Homecenter" class="footer-brand__logo" />
+                        <p class="footer-brand__text">
+                            Prototipo de hackathon enfocado en aprendizaje, orientación y acceso
+                            a rutas de acción más claras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-links">
+                        <h2 class="footer-title">Explorar</h2>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="escenarios.html">Casos interactivos</a></li>
+                            <li><a href="guia.html">Guía de acción</a></li>
+                            <li><a href="recursos.html">Recursos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-links">
+                        <h2 class="footer-title">Ayuda complementaria</h2>
+                        <ul class="footer-list">
+                            <li><a href="guia.html">No sé qué hacer</a></li>
+                            <li><a href="escenarios.html">Quiero revisar casos</a></li>
+                            <li><a href="#top">Volver arriba</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-bottom__text">
+                    © <span id="currentYear"></span> Promart. Prototipo de hackathon con enfoque educativo y de
+                    orientación.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-sticky-cta d-lg-none">
+        <a class="btn btn-primary w-100" href="#modulo-reporte">Completar formulario</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/validation.js"></script>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+    <script src="assets/js/firebase-config.js"></script>
+    <script src="assets/js/form-handler.js"></script>
+</body>
+
+</html>

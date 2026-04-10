@@ -1,0 +1,139 @@
+{
+  "scenarios": [
+    {
+      "id": "caso-01",
+      "region": "lima-callao",
+      "area": "Piso de ventas",
+      "difficulty": "Básico",
+      "title": "Comentario repetido frente a clientes",
+      "context": "En una tienda de Lima, una asesora de ventas atiende en su módulo con alto flujo de clientes.",
+      "situation": "Un compañero le dice varias veces delante de otros: “Con esa sonrisa sí vendes más” y luego agrega comentarios sobre su cuerpo. Ella se ríe por incomodidad, pero ya le pidió antes que deje de hacerlo.",
+      "correctAnswer": "si",
+      "rationale": "Sí puede constituir hostigamiento. Hay comentarios no deseados sobre su apariencia y cuerpo, repetidos pese a que ya expresó incomodidad.",
+      "signals": [
+        "Comentarios sobre el cuerpo o apariencia.",
+        "Repetición de la conducta después de poner un límite.",
+        "Exposición en un espacio laboral frente a otras personas."
+      ],
+      "actionTip": "Registrar fechas y contexto puede ayudar. Si la situación continúa, conviene revisar la guía y considerar orientación o reporte."
+    },
+    {
+      "id": "caso-02",
+      "region": "norte",
+      "area": "Caja",
+      "difficulty": "Básico",
+      "title": "Invitación insistente después del turno",
+      "context": "En una tienda del norte, una colaboradora de caja termina su jornada y se prepara para salir.",
+      "situation": "Su supervisor le escribe por chat personal para invitarla a salir. Ella dice que no está interesada. Él insiste tres veces más y le dice que podría “ayudarla con sus horarios” si cambia de opinión.",
+      "correctAnswer": "si",
+      "rationale": "Sí puede constituir hostigamiento. Hay insistencia no deseada y una insinuación de ventaja laboral vinculada a aceptar una salida.",
+      "signals": [
+        "Insistencia luego de una negativa clara.",
+        "Uso de una posición de poder o influencia.",
+        "Sugerencia de beneficio laboral a cambio de aceptar."
+      ],
+      "actionTip": "Guardar capturas del chat y revisar la ruta de acción puede ser útil si deseas orientación o reporte."
+    },
+    {
+      "id": "caso-03",
+      "region": "centro-sur",
+      "area": "Almacén",
+      "difficulty": "Intermedio",
+      "title": "Broma normalizada en el equipo",
+      "context": "En almacén, durante una pausa, varias personas conversan mientras ordenan mercadería.",
+      "situation": "Un trabajador hace chistes sobre la vida sexual de una compañera y el resto del equipo se ríe. Ella se queda callada y luego evita coincidir con ese grupo.",
+      "correctAnswer": "si",
+      "rationale": "Sí puede constituir hostigamiento. Aunque se presente como broma, hay contenido sexual o sexista que genera incomodidad y afecta el ambiente laboral.",
+      "signals": [
+        "Contenido sexual o íntimo no apropiado para el trabajo.",
+        "Normalización por parte del grupo.",
+        "Cambio de conducta de la persona afectada para evitar el espacio."
+      ],
+      "actionTip": "Si observas algo así, la guía también puede orientarte desde el rol de testigo."
+    },
+    {
+      "id": "caso-04",
+      "region": "oriente",
+      "area": "Supervisión",
+      "difficulty": "Intermedio",
+      "title": "Acercamiento físico innecesario",
+      "context": "En un recorrido de tienda, una jefa explica tareas nuevas a una colaboradora recién incorporada.",
+      "situation": "Mientras revisan un exhibidor, un compañero se acerca demasiado, le toca la cintura para “moverla” y sonríe cuando ella se aparta. Después le dice que no sea “tan sensible”.",
+      "correctAnswer": "si",
+      "rationale": "Sí puede constituir hostigamiento. Hay contacto físico no deseado, invasión del espacio personal y minimización posterior de la incomodidad.",
+      "signals": [
+        "Contacto físico no necesario.",
+        "Invasión del espacio personal.",
+        "Descalificación de la incomodidad de la otra persona."
+      ],
+      "actionTip": "No necesitas esperar a que ocurra más veces para buscar orientación si la situación te incomodó."
+    },
+    {
+      "id": "caso-05",
+      "region": "lima-callao",
+      "area": "Back office de tienda",
+      "difficulty": "Básico",
+      "title": "Corrección laboral sin contenido inapropiado",
+      "context": "En el cierre del día, un líder revisa errores en el registro de inventario con una analista.",
+      "situation": "El líder le indica que debe corregir un reporte porque tiene inconsistencias y le pide rehacerlo antes del cierre. El tono fue firme, pero no hubo comentarios personales, sexuales ni insinuaciones.",
+      "correctAnswer": "no",
+      "rationale": "No necesariamente constituye hostigamiento por sí solo. Puede ser una interacción laboral exigente o incómoda, pero en este caso no aparecen señales sexuales o sexistas.",
+      "signals": [
+        "La incomodidad no siempre significa hostigamiento.",
+        "Es importante distinguir exigencia laboral de conductas inapropiadas."
+      ],
+      "actionTip": "Diferenciar situaciones ayuda a identificar mejor cuándo sí hay señales que merecen atención."
+    },
+    {
+      "id": "caso-06",
+      "region": "norte",
+      "area": "Piso de ventas",
+      "difficulty": "Intermedio",
+      "title": "Cambio de trato después de un rechazo",
+      "context": "En el área comercial, dos colaboradores trabajan en el mismo pasillo y coordinan metas diarias.",
+      "situation": "Después de que una colaboradora rechaza una invitación personal, su compañero empieza a ignorarla, deja de compartir información necesaria y hace comentarios irónicos sobre que ahora “se cree mucho”.",
+      "correctAnswer": "si",
+      "rationale": "Sí puede constituir hostigamiento. El trato hostil o represalia después de un rechazo es una señal relevante.",
+      "signals": [
+        "Represalia luego de marcar un límite.",
+        "Afectación del trabajo diario.",
+        "Comentarios despectivos ligados al rechazo."
+      ],
+      "actionTip": "La guía puede ayudarte a decidir si primero quieres orientación o si ya corresponde una ruta más formal."
+    },
+    {
+      "id": "caso-07",
+      "region": "centro-sur",
+      "area": "Caja",
+      "difficulty": "Avanzado",
+      "title": "Mensaje ambiguo que genera duda",
+      "context": "Una colaboradora de caja recibe mensajes de un jefe fuera del horario laboral.",
+      "situation": "El mensaje dice: “Cuando quieras crecer acá, avísame y vemos cómo apoyarte 😉”. No hay algo explícito, pero antes él ya había hecho comentarios sobre lo “guapa” que se ve cuando usa cierto uniforme.",
+      "correctAnswer": "duda",
+      "rationale": "La situación reúne señales que merecen atención y no debería minimizarse. Aunque el mensaje sea ambiguo, el contexto previo cambia la lectura. Aquí la mejor respuesta es reconocer que hace falta mirar el patrón completo.",
+      "signals": [
+        "Mensajes ambiguos con doble sentido.",
+        "Contexto previo de comentarios sobre apariencia.",
+        "Relación de poder que puede influir en la interpretación."
+      ],
+      "actionTip": "Cuando una situación no es totalmente clara, revisar el patrón completo y buscar orientación temprana puede ser la mejor opción."
+    },
+    {
+      "id": "caso-08",
+      "region": "oriente",
+      "area": "Almacén",
+      "difficulty": "Intermedio",
+      "title": "Foto no solicitada en chat de trabajo",
+      "context": "Un equipo operativo comparte coordinación diaria por un grupo de mensajería.",
+      "situation": "Un trabajador envía una foto personal insinuante al chat donde también está una compañera. Luego dice que fue “sin querer”, pero mantiene comentarios sugestivos durante la semana.",
+      "correctAnswer": "si",
+      "rationale": "Sí puede constituir hostigamiento. Compartir contenido insinuante no solicitado en un espacio de trabajo y continuar con comentarios sugestivos es una señal clara.",
+      "signals": [
+        "Contenido insinuante o sexual no solicitado.",
+        "Uso de un canal laboral para una conducta inapropiada.",
+        "Persistencia posterior de comentarios sugestivos."
+      ],
+      "actionTip": "Guardar evidencia digital puede facilitar una orientación más clara si decides avanzar."
+    }
+  ]
+}

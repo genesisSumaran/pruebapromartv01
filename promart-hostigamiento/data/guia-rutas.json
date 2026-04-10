@@ -1,0 +1,190 @@
+{
+    "routes": [
+        {
+            "id": "route-01",
+            "match": {
+                "who": "me-paso",
+                "need": "reporte",
+                "risk": "si"
+            },
+            "title": "Conviene priorizar una ruta de acción formal",
+            "summary": "Por tus respuestas, parece importante no postergar la acción. La situación sigue presente o hay riesgo inmediato, y tú ya identificas la necesidad de reportar.",
+            "actions": [
+                "Busca una vía segura para salir del contexto inmediato si te sientes expuesta(o).",
+                "Anota hechos, fechas, lugares y cualquier patrón que recuerdes con claridad.",
+                "Guarda mensajes, capturas o cualquier evidencia digital si existe.",
+                "Inicia la ruta de orientación o reporte para no cargar esto sola(o)."
+            ],
+            "rights": [
+                "No necesitas esperar a que pase otra vez para buscar orientación.",
+                "Tu incomodidad importa, incluso si todavía no sabes cómo nombrar lo ocurrido.",
+                "La confidencialidad y el trato respetuoso deben ser parte del proceso.",
+                "Puedes pedir apoyo sin tener que presentar una narración perfecta desde el inicio."
+            ],
+            "channel": "Canal sugerido: iniciar orientación o reporte desde la ruta formal de la empresa lo antes posible."
+        },
+        {
+            "id": "route-02",
+            "match": {
+                "who": "me-paso",
+                "need": "orientacion"
+            },
+            "title": "Empezar por orientación es una buena decisión",
+            "summary": "No necesitas definirlo todo ahora. Buscar orientación primero puede ayudarte a entender mejor tus opciones, ordenar lo ocurrido y decidir con más claridad.",
+            "actions": [
+                "Escribe un resumen simple de lo que pasó, aunque sea breve.",
+                "Identifica si hubo mensajes, testigos o momentos repetidos.",
+                "Piensa qué necesitas hoy: información, acompañamiento o una ruta formal.",
+                "Continúa a orientación si quieres apoyo sin pasar todavía a un reporte completo."
+            ],
+            "rights": [
+                "No necesitas esperar a que pase otra vez para buscar orientación.",
+                "Tu incomodidad importa, incluso si todavía no sabes cómo nombrar lo ocurrido.",
+                "La confidencialidad y el trato respetuoso deben ser parte del proceso."
+            ],
+            "channel": "Canal sugerido: orientación inicial, con posibilidad de derivarte luego a una ruta formal si lo decides."
+        },
+        {
+            "id": "route-03",
+            "match": {
+                "who": "me-paso",
+                "need": "entender"
+            },
+            "title": "Tu siguiente paso es aclarar el panorama",
+            "summary": "Todavía estás en una etapa de comprensión, y eso es válido. Antes de decidir si reportas, puede ayudarte revisar tus opciones y reconocer mejor el patrón de la situación.",
+            "actions": [
+                "Ordena lo ocurrido en secuencia: qué pasó, cuándo, dónde y quién estuvo presente.",
+                "Distingue si fue un hecho aislado o parte de una conducta repetida.",
+                "Revisa la guía y los recursos para entender señales y rutas disponibles.",
+                "Busca orientación si la duda te está frenando o te genera ansiedad."
+            ],
+            "rights": [
+                "No necesitas esperar a que pase otra vez para buscar orientación.",
+                "Tu incomodidad importa, incluso si todavía no sabes cómo nombrar lo ocurrido.",
+                "La confidencialidad y el trato respetuoso deben ser parte del proceso."
+            ],
+            "channel": "Canal sugerido: revisión de opciones y orientación inicial antes de decidir si quieres reportar."
+        },
+        {
+            "id": "route-04",
+            "match": {
+                "who": "lo-vi",
+                "risk": "si"
+            },
+            "title": "Como testigo, tu rol puede ser importante",
+            "summary": "Cuando hay riesgo o continuidad, mirar hacia otro lado puede aumentar la vulnerabilidad de la persona afectada. No necesitas invadir, pero sí actuar con criterio.",
+            "actions": [
+                "Registra hechos observables: qué viste, cuándo y en qué contexto.",
+                "Evita confrontaciones impulsivas si eso puede aumentar el riesgo.",
+                "Si puedes hacerlo de forma segura, ofrece apoyo respetuoso a la persona afectada.",
+                "Busca orientación sobre la ruta más adecuada para reportar o acompañar."
+            ],
+            "rights": [
+                "Ser testigo también importa. Observar una situación puede justificar una búsqueda de orientación.",
+                "Puedes registrar hechos concretos sin exagerar ni reinterpretar lo ocurrido.",
+                "No necesitas resolver la situación sola(o) antes de buscar ayuda."
+            ],
+            "channel": "Canal sugerido: orientación o reporte desde el rol de testigo, especialmente si la situación sigue ocurriendo."
+        },
+        {
+            "id": "route-05",
+            "match": {
+                "who": "lo-vi"
+            },
+            "title": "Primero conviene orientar y ordenar la información",
+            "summary": "Cuando no te pasó directamente, es útil actuar con cuidado, sin minimizar ni exagerar. La prioridad es apoyar de forma respetuosa y entender la mejor vía de ayuda.",
+            "actions": [
+                "Diferencia lo que viste directamente de lo que te contaron.",
+                "Evita difundir la situación entre más personas de las necesarias.",
+                "Sugiere una ruta de orientación a quien lo vivió, si eso es apropiado.",
+                "Busca guía si tienes dudas sobre cómo acompañar o derivar."
+            ],
+            "rights": [
+                "Ser testigo también importa. Observar una situación puede justificar una búsqueda de orientación.",
+                "Puedes registrar hechos concretos sin exagerar ni reinterpretar lo ocurrido.",
+                "No necesitas resolver la situación sola(o) antes de buscar ayuda."
+            ],
+            "channel": "Canal sugerido: orientación inicial para acompañamiento responsable y eventual derivación."
+        },
+        {
+            "id": "route-06",
+            "match": {
+                "who": "me-lo-contaron"
+            },
+            "title": "Primero conviene orientar y ordenar la información",
+            "summary": "Cuando no te pasó directamente, es útil actuar con cuidado, sin minimizar ni exagerar. La prioridad es apoyar de forma respetuosa y entender la mejor vía de ayuda.",
+            "actions": [
+                "Diferencia lo que te contaron de lo que conoces directamente.",
+                "Evita difundir la situación entre más personas de las necesarias.",
+                "Sugiere una ruta de orientación a quien lo vivió, si eso es apropiado.",
+                "Busca guía si tienes dudas sobre cómo acompañar o derivar."
+            ],
+            "rights": [
+                "Acompañar con respeto también es una forma de apoyo.",
+                "No necesitas tener toda la información para sugerir orientación.",
+                "Evita actuar de manera impulsiva si no conoces bien el contexto."
+            ],
+            "channel": "Canal sugerido: orientación inicial para acompañamiento responsable y eventual derivación."
+        },
+        {
+            "id": "route-07",
+            "match": {
+                "status": "si"
+            },
+            "title": "No conviene dejarlo en pausa",
+            "summary": "Tus respuestas muestran que la situación puede seguir presente. Aunque todavía no definas una ruta formal, sí conviene moverte hacia una orientación concreta.",
+            "actions": [
+                "No normalices la continuidad de la situación.",
+                "Registra lo esencial mientras lo recuerdas con claridad.",
+                "Busca una vía de orientación hoy, no solo cuando empeore.",
+                "Si hay temor o exposición constante, prioriza apoyo temprano."
+            ],
+            "rights": [
+                "No necesitas esperar a que pase otra vez para buscar orientación.",
+                "Tu incomodidad importa, incluso si todavía no sabes cómo nombrar lo ocurrido.",
+                "La confidencialidad y el trato respetuoso deben ser parte del proceso.",
+                "Puedes pedir ayuda aunque aún no tengas todas las pruebas ordenadas."
+            ],
+            "channel": "Canal sugerido: orientación inmediata, con posibilidad de escalar a reporte según el caso."
+        },
+        {
+            "id": "route-08",
+            "match": {
+                "risk": "si"
+            },
+            "title": "No conviene dejarlo en pausa",
+            "summary": "Tus respuestas muestran que la situación puede seguir presente. Aunque todavía no definas una ruta formal, sí conviene moverte hacia una orientación concreta.",
+            "actions": [
+                "No normalices la continuidad de la situación.",
+                "Registra lo esencial mientras lo recuerdas con claridad.",
+                "Busca una vía de orientación hoy, no solo cuando empeore.",
+                "Si hay temor o exposición constante, prioriza apoyo temprano."
+            ],
+            "rights": [
+                "No necesitas esperar a que pase otra vez para buscar orientación.",
+                "Tu incomodidad importa, incluso si todavía no sabes cómo nombrar lo ocurrido.",
+                "La confidencialidad y el trato respetuoso deben ser parte del proceso.",
+                "Puedes pedir ayuda aunque aún no tengas todas las pruebas ordenadas."
+            ],
+            "channel": "Canal sugerido: orientación inmediata, con posibilidad de escalar a reporte según el caso."
+        },
+        {
+            "id": "route-default",
+            "match": {},
+            "title": "Tu mejor siguiente paso es orientación clara y sin presión",
+            "summary": "No todo se resuelve de una sola vez. Con tus respuestas, lo más útil parece ser una orientación inicial que te ayude a decidir con calma y con más información.",
+            "actions": [
+                "Resume lo ocurrido con tus propias palabras.",
+                "Identifica si hubo repetición, presión, insinuaciones o represalias.",
+                "Revisa los recursos si todavía sientes que te faltan elementos.",
+                "Avanza a orientación si necesitas apoyo más personalizado."
+            ],
+            "rights": [
+                "No necesitas esperar a que pase otra vez para buscar orientación.",
+                "Tu incomodidad importa, incluso si todavía no sabes cómo nombrar lo ocurrido.",
+                "La confidencialidad y el trato respetuoso deben ser parte del proceso."
+            ],
+            "channel": "Canal sugerido: orientación inicial y revisión de recursos antes de decidir una acción mayor."
+        }
+    ]
+}

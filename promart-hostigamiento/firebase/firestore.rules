@@ -1,0 +1,86 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    function isValidString(field, min, max) {
+      return field is string
+        && field.size() >= min
+        && field.size() <= max;
+    }
+
+    function isOptionalString(field, max) {
+      return !(field is string) || field.size() <= max;
+    }
+
+    function isAllowedValue(field, allowed) {
+      return field in allowed;
+    }
+
+    function hasOnlyAllowedKeys() {
+      return request.resource.data.keys().hasOnly([
+        'requestType',
+        'region',
+        'area',
+        'relationship',
+        'urgency',
+        'incidentDate',
+        'description',
+        'ongoing',
+        'evidence',
+        'fullName',
+        'contactEmail',
+        'contactPhone',
+        'consentAccuracy',
+        'consentPrivacy',
+        'consentContact',
+        'trackingCode',
+        'source',
+        'createdAt',
+        'status',
+        'channelRecommendation'
+      ]);
+    }
+
+    function isValidReportCreate() {
+      return hasOnlyAllowedKeys()
+        && isAllowedValue(request.resource.data.requestType, ['orientacion', 'reporte'])
+        && isAllowedValue(request.resource.data.region, ['lima-callao', 'norte', 'centro-sur', 'oriente'])
+        && isAllowedValue(request.resource.data.area, ['piso-ventas', 'caja', 'almacen', 'supervision', 'back-office', 'otro'])
+        && isAllowedValue(request.resource.data.relationship, ['me-paso', 'testigo', 'me-contaron'])
+        && isAllowedValue(request.resource.data.urgency, ['alta', 'media', 'baja'])
+        && isAllowedValue(request.resource.data.ongoing, ['si', 'no', 'no-se'])
+        && isAllowedValue(request.resource.data.evidence, ['mensajes', 'testigos', 'ambos', 'no', 'no-se'])
+        && isAllowedValue(request.resource.data.status, ['recibido'])
+        && isAllowedValue(request.resource.data.channelRecommendation, ['orientacion-inicial', 'ruta-formal'])
+        && isValidString(request.resource.data.incidentDate, 4, 120)
+        && isValidString(request.resource.data.description, 20, 1500)
+        && isValidString(request.resource.data.trackingCode, 8, 40)
+        && isValidString(request.resource.data.source, 3, 80)
+        && isOptionalString(request.resource.data.fullName, 120)
+        && isOptionalString(request.resource.data.contactEmail, 160)
+        && isOptionalString(request.resource.data.contactPhone, 40)
+        && request.resource.data.consentAccuracy == true
+        && request.resource.data.consentPrivacy == true
+        && request.resource.data.consentContact is bool
+        && request.resource.data.createdAt == request.time;
+    }
+
+    match /promart_reportes/{reportId} {
+      allow create: if isValidReportCreate();
+      allow read, update, delete: if isAdmin();
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

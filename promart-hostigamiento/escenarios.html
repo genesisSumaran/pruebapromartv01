@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casos interactivos | ¿Esto es hostigamiento? | Promart</title>
+    <meta name="description"
+        content="Explora casos interactivos del entorno retail, identifica señales de hostigamiento y recibe explicaciones claras y fundamentadas." />
+    <meta name="theme-color" content="#ff6900" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+
+<body class="page-inner page-escenarios">
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header class="site-header" id="top">
+        <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand site-brand" href="index.html" aria-label="Ir al inicio">
+                    <img src="assets/img/logo-promart.png" alt="Promart Homecenter" class="site-brand__logo" />
+                </a>
+
+                <button class="navbar-toggler site-nav__toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                    aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto me-lg-3 site-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#rutas">Rutas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#senales">Señales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="escenarios.html">Casos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="guia.html">Guía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recursos.html">Recursos</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-primary btn-sm site-nav__cta" href="reporte.html">
+                        Necesito orientación
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <section class="page-shell">
+            <div class="container">
+                <section class="page-intro" aria-labelledby="pageTitle">
+                    <span class="eyebrow">Casos interactivos</span>
+                    <h1 class="page-intro__title" id="pageTitle">
+                        Situaciones que no deberías normalizar
+                    </h1>
+                    <p class="page-intro__text">
+                        Revisa escenarios del entorno retail, responde según lo que observas y
+                        recibe una explicación clara. No se trata de memorizar leyes. Se trata
+                        de reconocer señales a tiempo y saber qué hacer después.
+                    </p>
+
+                    <div class="page-actions">
+                        <a class="btn btn-primary" href="#modulo-casos">Empezar ahora</a>
+                        <a class="btn btn-outline-primary" href="guia.html">Ir primero a la guía</a>
+                    </div>
+                </section>
+
+                <section class="info-banner mb-4" aria-label="Nota de uso">
+                    <strong>Importante:</strong>
+                    este módulo es educativo y orientativo. Si una situación te preocupa o te genera
+                    incomodidad, no necesitas terminar todos los casos para buscar ayuda.
+                </section>
+
+                <section class="section-surface mb-4" aria-labelledby="filtrosTitle">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-12 col-lg-7">
+                            <span class="eyebrow">Personaliza la experiencia</span>
+                            <h2 class="section-title mb-3" id="filtrosTitle">Elige una región</h2>
+                            <p class="section-text mb-4">
+                                Los casos están organizados por región para reflejar distintos contextos
+                                operativos. El contenido sigue siendo útil aunque no trabajes exactamente
+                                en ese entorno.
+                            </p>
+
+                            <div class="chip-group" data-chip-group="single" id="regionFilters" role="group"
+                                aria-label="Filtro por región">
+                                <button type="button" class="chip is-active" aria-pressed="true" data-region="todas">
+                                    Todas
+                                </button>
+                                <button type="button" class="chip" aria-pressed="false" data-region="lima-callao">
+                                    Lima y Callao
+                                </button>
+                                <button type="button" class="chip" aria-pressed="false" data-region="norte">
+                                    Norte
+                                </button>
+                                <button type="button" class="chip" aria-pressed="false" data-region="centro-sur">
+                                    Centro y Sur
+                                </button>
+                                <button type="button" class="chip" aria-pressed="false" data-region="oriente">
+                                    Oriente
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-5">
+                            <div class="notice-card h-100">
+                                <span class="badge-soft mb-3">Cómo funciona</span>
+                                <ul class="mb-0">
+                                    <li>Lee el caso con calma.</li>
+                                    <li>Elige si consideras que sí es, no es o no estás segura(o).</li>
+                                    <li>Revisa la explicación y las señales clave.</li>
+                                    <li>Al final verás tu resultado y la mejor ruta siguiente.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="quiz-layout" id="modulo-casos" aria-labelledby="quizModuleTitle">
+                    <div class="quiz-main">
+                        <section class="scenario-card" id="scenarioCard" aria-labelledby="quizModuleTitle">
+                            <div class="scenario-card__meta" aria-label="Metadatos del caso">
+                                <span class="badge-soft" id="scenarioRegion">Región: Todas</span>
+                                <span class="badge-soft" id="scenarioArea">Área: Piso de ventas</span>
+                                <span class="badge-soft" id="scenarioDifficulty">Nivel: Básico</span>
+                            </div>
+
+                            <h2 class="scenario-card__title" id="quizModuleTitle">
+                                Cargando caso...
+                            </h2>
+
+                            <p class="scenario-card__context" id="scenarioContext">
+                                Estamos preparando el primer escenario interactivo.
+                            </p>
+
+                            <p class="scenario-card__situation" id="scenarioSituation">
+                                En unos segundos verás aquí la situación completa para analizarla.
+                            </p>
+
+                            <div class="progress-shell mb-4" aria-label="Progreso del módulo">
+                                <div class="progress-meta">
+                                    <span id="progressLabel">Caso 0 de 0</span>
+                                    <span id="progressPercent">0%</span>
+                                </div>
+
+                                <div class="progress" role="progressbar" aria-label="Avance del módulo"
+                                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                    <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+
+                            <h3 class="scenario-card__question" id="questionHeading">
+                                ¿Cómo evaluarías esta situación?
+                            </h3>
+
+                            <div class="option-list" id="answerOptions" role="group" aria-labelledby="questionHeading">
+                                <button type="button" class="option-button" data-answer-value="si">
+                                    Sí, puede constituir hostigamiento
+                                </button>
+
+                                <button type="button" class="option-button" data-answer-value="no">
+                                    No, no parece constituir hostigamiento
+                                </button>
+
+                                <button type="button" class="option-button" data-answer-value="duda">
+                                    No estoy segura(o), necesito más contexto
+                                </button>
+                            </div>
+
+                            <div class="feedback-card mt-4 is-hidden" id="scenarioFeedback" aria-live="polite">
+                                <span class="feedback-card__label" id="feedbackLabel">
+                                    Resultado
+                                </span>
+
+                                <h3 class="feedback-card__title" id="feedbackTitle">
+                                    Aquí verás la explicación
+                                </h3>
+
+                                <p class="feedback-card__text" id="feedbackText">
+                                    Después de responder, aparecerá aquí una explicación simple y útil.
+                                </p>
+
+                                <div id="feedbackSignalsWrapper" class="is-hidden">
+                                    <strong>Señales clave</strong>
+                                    <ul class="feedback-card__list" id="feedbackSignals"></ul>
+                                </div>
+
+                                <div id="feedbackActionWrapper" class="is-hidden">
+                                    <strong>Qué podrías hacer</strong>
+                                    <p class="feedback-card__text mb-0" id="feedbackAction"></p>
+                                </div>
+                            </div>
+
+                            <div class="quiz-actions">
+                                <button type="button" class="btn btn-outline-primary" id="resetQuizBtn">
+                                    Reiniciar módulo
+                                </button>
+
+                                <button type="button" class="btn btn-primary" id="nextScenarioBtn" disabled>
+                                    Siguiente caso
+                                </button>
+                            </div>
+                        </section>
+
+                        <section class="result-card mt-4 is-hidden" id="quizResult" aria-labelledby="quizResultTitle">
+                            <div class="quiz-result">
+                                <div class="quiz-result__header">
+                                    <span class="eyebrow">Resultado final</span>
+                                    <h2 class="quiz-result__title" id="quizResultTitle">
+                                        Terminaste el módulo
+                                    </h2>
+                                    <p class="quiz-result__text" id="quizResultText">
+                                        Aquí verás un resumen de tu desempeño y la mejor ruta siguiente.
+                                    </p>
+                                </div>
+
+                                <div class="kpi-grid" aria-label="Resumen de resultados">
+                                    <div class="kpi-card">
+                                        <span class="kpi-card__value" id="resultScore">0/0</span>
+                                        <span class="kpi-card__label">Puntaje</span>
+                                    </div>
+
+                                    <div class="kpi-card">
+                                        <span class="kpi-card__value" id="resultLevel">--</span>
+                                        <span class="kpi-card__label">Nivel de alerta</span>
+                                    </div>
+
+                                    <div class="kpi-card">
+                                        <span class="kpi-card__value" id="resultRegion">Todas</span>
+                                        <span class="kpi-card__label">Región filtrada</span>
+                                    </div>
+                                </div>
+
+                                <div class="feedback-card feedback-card--warning" id="resultRecommendationCard">
+                                    <span class="feedback-card__label">Recomendación</span>
+                                    <h3 class="feedback-card__title" id="resultRecommendationTitle">
+                                        Tu siguiente paso recomendado
+                                    </h3>
+                                    <p class="feedback-card__text" id="resultRecommendationText">
+                                        Revisa la guía para entender qué hacer si te pasa a ti o si lo observaste.
+                                    </p>
+                                </div>
+
+                                <div class="page-state-block__actions">
+                                    <a class="btn btn-primary" href="guia.html">Ir a la guía</a>
+                                    <a class="btn btn-outline-primary" href="reporte.html">Necesito orientación</a>
+                                    <button type="button" class="btn btn-outline-primary" id="restartFromResultBtn">
+                                        Volver a empezar
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="empty-state quiz-empty mt-4 is-hidden" id="quizEmptyState"
+                            aria-labelledby="emptyTitle">
+                            <h2 class="empty-state__title" id="emptyTitle">
+                                No encontramos casos para este filtro
+                            </h2>
+                            <p class="empty-state__text">
+                                Cambia la región seleccionada o reinicia el módulo para cargar nuevamente los casos.
+                            </p>
+                            <div class="page-state-block__actions">
+                                <button type="button" class="btn btn-primary" id="showAllRegionsBtn">
+                                    Mostrar todas las regiones
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="quiz-sidebar" aria-label="Resumen lateral del módulo">
+                        <div class="quiz-sidebar__stack">
+                            <section class="panel-card">
+                                <span class="eyebrow">Tu progreso</span>
+                                <h2 class="panel-card__title">Resumen rápido</h2>
+                                <div class="flow-stack">
+                                    <div>
+                                        <strong>Casos respondidos</strong>
+                                        <p class="panel-card__text mb-0" id="sidebarAnswered">0 de 0</p>
+                                    </div>
+
+                                    <div>
+                                        <strong>Puntaje actual</strong>
+                                        <p class="panel-card__text mb-0" id="sidebarScore">0</p>
+                                    </div>
+
+                                    <div>
+                                        <strong>Región activa</strong>
+                                        <p class="panel-card__text mb-0" id="sidebarRegion">Todas</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="panel-card">
+                                <span class="eyebrow">Recuerda</span>
+                                <h2 class="panel-card__title">Este módulo no busca juzgarte</h2>
+                                <p class="panel-card__text">
+                                    La meta no es “sacar 20”. La meta es ayudarte a detectar patrones,
+                                    reconocer señales y reducir la duda frente a situaciones ambiguas.
+                                </p>
+                            </section>
+
+                            <section class="result-card">
+                                <span class="eyebrow">Ruta rápida</span>
+                                <h2 class="result-card__title">¿Prefieres acción directa?</h2>
+                                <p class="result-card__text">
+                                    Puedes saltar a la guía o a la orientación en cualquier momento.
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <a class="btn btn-outline-primary" href="guia.html">Abrir guía</a>
+                                    <a class="btn btn-primary" href="reporte.html">Necesito orientación</a>
+                                </div>
+                            </section>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-4">
+                    <div class="footer-brand">
+                        <img src="assets/img/logo-promart.png" alt="Promart Homecenter" class="footer-brand__logo" />
+                        <p class="footer-brand__text">
+                            Prototipo de hackathon enfocado en aprendizaje, orientación y acceso
+                            a rutas de acción más claras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-links">
+                        <h2 class="footer-title">Explorar</h2>
+                        <ul class="footer-list">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="guia.html">Guía de acción</a></li>
+                            <li><a href="reporte.html">Orientación o reporte</a></li>
+                            <li><a href="recursos.html">Recursos</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-links">
+                        <h2 class="footer-title">Ayuda complementaria</h2>
+                        <ul class="footer-list">
+                            <li><a href="reporte.html">Necesito orientación</a></li>
+                            <li><a href="guia.html">No sé qué hacer</a></li>
+                            <li><a href="#top">Volver arriba</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-bottom__text">
+                    © <span id="currentYear"></span> Promart. Prototipo de hackathon con enfoque educativo y de
+                    orientación.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-sticky-cta d-lg-none">
+        <a class="btn btn-primary w-100" href="reporte.html">Necesito orientación</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/quiz-engine.js"></script>
+</body>
+
+</html>
