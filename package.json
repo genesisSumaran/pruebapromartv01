@@ -1,0 +1,21 @@
+{
+    "name": "promart-hostigamiento",
+    "version": "1.0.0",
+    "description": "Micrositio educativo e interactivo para identificar señales de hostigamiento y orientar sobre qué hacer.",
+    "main": "index.js",
+    "private": true,
+    "engines": {
+        "node": "18"
+    },
+    "scripts": {
+        "serve": "firebase emulators:start",
+        "deploy": "firebase deploy",
+        "deploy:hosting": "firebase deploy --only hosting",
+        "deploy:firestore": "firebase deploy --only firestore:rules",
+        "deploy:functions": "firebase deploy --only functions"
+    },
+    "dependencies": {
+        "firebase-admin": "^12.7.0",
+        "firebase-functions": "^5.1.1"
+    }
+}

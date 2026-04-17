@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maki Mascota</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor */
+        #maki {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 120px;
+            text-align: center;
+            z-index: 9999;
+        }
+
+        /* Imagen */
+        #maki-avatar {
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #maki-avatar:hover {
+            transform: scale(1.08);
+        }
+
+        /* Mensaje */
+        #maki-msg {
+            background: white;
+            padding: 8px;
+            border-radius: 10px;
+            margin-top: 5px;
+            font-size: 12px;
+            display: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animación leve */
+        @keyframes flotar {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        #maki-avatar {
+            animation: flotar 2s infinite;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- MASCOTA -->
+    <div id="maki">
+        <img src="maki.png" id="maki-avatar">
+        <div id="maki-msg">Hola 👋</div>
+    </div>
+
+    <script>
+        const maki = document.getElementById("maki-avatar");
+        const msg = document.getElementById("maki-msg");
+
+        /* Click */
+        maki.addEventListener("click", () => {
+            msg.style.display = "block";
+            msg.innerText = "Si necesitas ayuda o quieres reportar algo, estoy contigo.";
+        });
+
+        /* Mensaje automático */
+        setTimeout(() => {
+            msg.style.display = "block";
+            msg.innerText = "¿Te puedo guiar en esta página?";
+        }, 4000);
+
+        /* Cambio por scroll */
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 400) {
+                msg.style.display = "block";
+                msg.innerText = "Aquí puedes encontrar información importante.";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
