@@ -1,0 +1,141 @@
+:root {
+    --font-display: "Anton", Arial, sans-serif;
+    --font-body: "DM Sans", Arial, sans-serif;
+
+    --color-brand-orange: #ff6900;
+    --color-brand-navy: #212530;
+    --color-brand-purple: #6c08ad;
+    --color-brand-turquoise: #69e2d0;
+
+    --color-orange-soft: #ffa039;
+    --color-orange-pale: #ffd3bb;
+    --color-purple-soft: #a871d3;
+    --color-purple-pale: #ddd5f1;
+    --color-turquoise-pale: #caf3f0;
+    --color-gray-900: #212530;
+    --color-gray-700: #3b3f4a;
+    --color-gray-500: #6b7280;
+    --color-gray-300: #cbd5e1;
+    --color-gray-200: #e2e8f0;
+    --color-gray-100: #e4e8f0;
+    --color-white: #ffffff;
+    --color-black: #111111;
+
+    --color-text: var(--color-gray-900);
+    --color-text-muted: var(--color-gray-700);
+    --color-text-soft: var(--color-gray-500);
+
+    --color-bg-page: #f8fafc;
+    --color-bg-surface: var(--color-white);
+    --color-bg-subtle: var(--color-gray-100);
+    --color-bg-dark: var(--color-brand-navy);
+
+    --color-border: rgba(33, 37, 48, 0.12);
+    --color-border-strong: rgba(33, 37, 48, 0.2);
+
+    --color-primary: var(--color-brand-orange);
+    --color-primary-hover: #e55f00;
+    --color-primary-active: #cc5500;
+    --color-secondary: var(--color-brand-purple);
+    --color-accent: var(--color-brand-turquoise);
+
+    --color-success: #1f9d55;
+    --color-warning: #b7791f;
+    --color-danger: #c53030;
+    --color-info: #2563eb;
+
+    --gradient-hero: linear-gradient(135deg,
+            rgba(255, 105, 0, 0.12) 0%,
+            rgba(255, 160, 57, 0.18) 48%,
+            rgba(255, 255, 255, 1) 100%);
+
+    --gradient-panel: linear-gradient(135deg,
+            var(--color-brand-navy) 0%,
+            #2d3442 100%);
+
+    --gradient-cta: linear-gradient(135deg,
+            var(--color-brand-orange) 0%,
+            var(--color-orange-soft) 100%);
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-md: 1.125rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 2rem;
+    --text-3xl: 2.75rem;
+    --text-4xl: 3.5rem;
+
+    --line-height-tight: 1.1;
+    --line-height-snug: 1.25;
+    --line-height-normal: 1.6;
+    --line-height-relaxed: 1.75;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+
+    --letter-spacing-display: 0.02em;
+    --letter-spacing-label: 0.08em;
+
+    /* Espaciado */
+    --space-0: 0;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+
+    /* Radios */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.875rem;
+    --radius-lg: 1.25rem;
+    --radius-xl: 1.5rem;
+    --radius-2xl: 2rem;
+    --radius-pill: 999px;
+
+    /* Sombras */
+    --shadow-sm: 0 4px 12px rgba(33, 37, 48, 0.06);
+    --shadow-md: 0 10px 30px rgba(33, 37, 48, 0.1);
+    --shadow-lg: 0 20px 50px rgba(33, 37, 48, 0.14);
+    --shadow-focus: 0 0 0 4px rgba(255, 105, 0, 0.18);
+
+    /* Layout */
+    --container-max: 1200px;
+    --header-height: 80px;
+    --mobile-cta-height: 84px;
+    --section-space-y: clamp(3.5rem, 7vw, 6rem);
+
+    /* Bordes y transiciones */
+    --border-width: 1px;
+    --transition-fast: 180ms ease;
+    --transition-base: 240ms ease;
+    --transition-slow: 320ms ease;
+
+    /* Z-index */
+    --z-base: 1;
+    --z-dropdown: 1000;
+    --z-sticky: 1020;
+    --z-fixed: 1030;
+    --z-modal-backdrop: 1040;
+    --z-modal: 1050;
+    --z-tooltip: 1080;
+}
+
+/* Breakpoints de referencia */
+:root {
+    --bp-sm: 576px;
+    --bp-md: 768px;
+    --bp-lg: 992px;
+    --bp-xl: 1200px;
+    --bp-xxl: 1400px;
+}
