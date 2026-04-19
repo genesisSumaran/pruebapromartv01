@@ -40,15 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const dateTimeDetails = document.getElementById('date-time-details');
     const incidentDateDiv = document.getElementById('incidentDateDiv');
 
-    dateApproximateCheckbox.addEventListener('change', function () {
-        if (this.checked) {
-            dateTimeDetails.style.display = 'none';
-            incidentDateDiv.style.display = 'block';
-        } else {
-            dateTimeDetails.style.display = 'block';
-            incidentDateDiv.style.display = 'none';
-        }
-    });
 
     function init() {
         hydrateDraft();
