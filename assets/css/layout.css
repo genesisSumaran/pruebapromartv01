@@ -496,7 +496,7 @@ button:hover {
 
 @media (max-width: 767px) {
     .intro-section11 {
-        background-image: url('/assets/img/movilresponsive.png') !important;
+        background-image: url('.../assets/img/movilresponsive.png') !important;
         background-size: contain !important;
         background-repeat: no-repeat !important;
         background-position: top center !important;
